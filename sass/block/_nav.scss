@@ -1,0 +1,129 @@
+.navbar-inverse {
+    border: none;
+    @include mobile {
+        .pull-left,
+        .pull-right {
+            float: none!important;
+        }
+    }
+}
+
+.header {
+    .navbar-nav {
+        li a {
+            text-transform: uppercase;
+            .icon-light {
+                color: #a21e17;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+        }
+        .current_page_item {
+            a {
+                font-family: $font-default-bold;
+                background: $navbar-inverse-link-active-bg;
+                color: $navbar-inverse-link-active-color;
+            }
+        }
+    }
+}
+
+//login dropdow menu
+.navbar-nav {
+    .login {
+        .dropdown-menu {
+            background: $navbar-inverse-link-hover-bg;
+            @include border-radius(0);
+            @include box-shadow(none);
+            padding: 0;
+            border: none;
+            &:after {
+                position: absolute;
+                right: 26px;
+                top: -10px !important;
+                content: "";
+                @extend .sprites;
+                @extend .sprites-arrow-down;
+                @include rotate(180deg);
+            }
+        }
+        hr {
+            border-color: #fff transparent transparent;
+            border-width: 2px 0 0;
+        }
+        .login-form {
+            margin: 0;
+            padding: 60px 40px;
+            @include tablet {
+                min-width: 455px;
+            }
+        }
+        .form-group {
+            position: relative;
+        }
+        i.required {
+            display: block;
+            position: absolute;
+            right: 20px;
+            color: #000;
+            font-style: normal;
+            font-size: 40px;
+            position: absolute;
+            right: 20px;
+            top: 4px;
+        }
+        .form-control {
+            height: 50px;
+            border: 3px solid white;
+            @include border-radius(0);
+            @include box-shadow(none);
+            color: $input-color-placeholder;
+            &:focus {
+                background: #202020;
+                color: white;
+                &::-webkit-input-placeholder {
+                    color: #fff;
+                }
+                /* Firefox < 19 */
+                &:-moz-placeholder {
+                    color: #fff;
+                }
+                /* Firefox > 19 */
+                &::-moz-placeholder {
+                    color: #fff;
+                }
+                /* Internet Explorer 10 */
+                &:-ms-input-placeholder {
+                    color: #fff;
+                }
+                & ~ .required {
+                    color: $navbar-inverse-link-hover-bg;
+                }
+            }
+        }
+        hr {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        & > a {
+            background: none!important;
+            color: $navbar-inverse-link-color !important;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            font-family: $font-default-bold;
+            border: 5px solid white;
+            @include border-radius(0);
+            @include box-shadow(none);
+            &.button-facebook {
+                background: #37589a;
+            }
+        }
+        .btn:not(.button-facebook) {
+            margin-top: 20px;
+        }
+    }
+}

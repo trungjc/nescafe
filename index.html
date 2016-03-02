@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body class="home">
+    <div class="wrapper">
+        <header class="header navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- menu for mobile-->
+                    <h1 class="logo">
+                        <a href="index.html" title="logo"><img src="img/logo.png" alt="logo" /></a>
+                    </h1>
+                    <!-- end logo-->
+                </div>
+                <!-- end navbar-header -->
+                <!-- menu for desktop-->
+                <nav role="navigation" class="navbar-collapse  collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="page_item ">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                        </li>
+                        <li class="page_item current_page_item">
+                            <a href="">Enter NOW <span class="icon-light"></span></a>
+                        </li>
+                    </ul>
+                    <!-- end navbar-nav-->
+                    <div class="pull-left search-box">
+                        <form action="" method="post" class="search-form">
+                            <div class="search-icon"><i class="glyphicon glyphicon-search"></i></div>
+                            <input type="text" class="search-field" placeholder="Search Projects" />
+                            <button class="search-submit" style="display: none">search</button>
+                        </form>
+                    </div>
+                    <!-- end search-box-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="login" id="myDropdown">
+                            <a data-toggle="dropdown" href="#" class="dropdown-toggle">Login</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="login-form">
+                                        <div class="panel-body">
+                                            <form action="" method="post" id="login">
+                                                <div class="form-group">
+                                                    <input type="email" data-keepOpenOnClick data-validation="required" class="login-form-input form-control" placeholder="your email address" />
+                                                    <i class="required">*</i>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" data-keepOpenOnClick data-validation="required" class="login-form-input form-control" placeholder="your password" />
+                                                    <i class="required">*</i>
+                                                </div>
+                                                <button class="login-form-button btn btn-default">Login</button>
+                                                <hr/>
+                                                <button class="login-form-button button-facebook btn btn-default">Login with facebook</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- end login-form-->
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Log out</a>
+                        </li>
+                        <li class="profile">
+                            <a data-toggle="dropdown" href="#" class="dropdown-toggle"> <img width="19px" alt="" src="img/profile-avatar.png"></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">menu item</a>
+                                </li>
+                                <li>
+                                    <a href="">menu item</a>
+                                </li>
+                                <li>
+                                    <a href="">menu item</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </nav>
+                <!-- /end navbar-collapse -->
+            </div>
+        </header>
+        <!-- END - Header =================================================================================== -->
+        <section class="hero" id="intro">
+            <div class="hero-caption">
+                <div class="container-caption">
+                    <img src="img/big-logo.png" alt="">
+                    <h2>Anonymous. Secure. Two-way communications.</h2>
+                    <p>Consectetur adipiscing elit. Pellentesque molestie massa metus, sit amet laoreet libero pellentesque sed. Maecenas volutpat massa in dolor.
+                    </p>
+                    <a class="play-icon popup-media play-button" href="https://www.youtube.com/embed/1WdxSWgRPFk?v=opj24KnzrWo" title="Media Title"><img src="img/play-icon.png" alt="" />
+                        <br/>
+                        <span class="em">Lorem ipsum dolor sit</span></a>
+                </div>
+                <div class="container-video embed-responsive embed-responsive-16by">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1WdxSWgRPFk?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- /end hero -->
+        <section class="tab-panel about-us" id="about-us">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" id="tabcordion">
+                <li role="presentation" class="active"><a href="#how" aria-controls="home" role="tab" data-toggle="tab">How it works</a></li>
+                <li role="presentation"><a href="#category" aria-controls="profile" role="tab" data-toggle="tab">Categories</a></li>
+                <li role="presentation"><a href="#what" aria-controls="messages" role="tab" data-toggle="tab">what you’ll win</a></li>
+                <li role="presentation"><a href="#key-date" aria-controls="settings" role="tab" data-toggle="tab">Key dates</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="how">
+                    <div class="tab-pane-content container">
+                        <div class="item ">
+                            <div class="number">01</div>
+                            <div class="image"><img src="img/cup-of-cofe.png" alt="" /></div>
+                            <div class="title">Sip your Nescafé</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">02</div>
+                            <div class="image"><img src="img/idea.png" alt="" /></div>
+                            <div class="title">Enter Idea</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">03</div>
+                            <div class="image"> <img src="img/share.png" alt="" /></div>
+                            <div class="title">Share your Idea</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">04</div>
+                            <div class="image"><img src="img/micro.png" alt="" /></div>
+                            <div class="title">Pitch Idea</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">05</div>
+                            <div class="image"><img src="img/cup.png" alt="" /></div>
+                            <div class="title">Win $15,000</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab content how-->
+                <div role="tabpanel" class="tab-pane" id="category">
+                    <div class="tab-pane-content container">
+                        <div class="item ">
+                            <div class="image auto-height"><img src="img/bucket-list.png" alt="" /></div>
+                            <div class="name yellow">Bucket list</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit.</div>
+                            <a class="watch-video" href="">watch video
+                                 <span class="sprites-play-icon sprites"></span>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <div class="image auto-height"><img src="img/art-culture.png" alt="" /></div>
+                            <div class="name blue">art/culture</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit.</div>
+                            <a class="watch-video" href="">watch video
+                                 <span class="sprites-play-icon sprites"></span>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <div class="image auto-height"><img src="img/social.png" alt="" /></div>
+                            <div class="name orange">social</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit.</div>
+                            <a class="watch-video" href="">watch video
+                                <span class="sprites-play-icon sprites"></span>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <div class="image auto-height"><img src="img/environmental.png" alt="" /></div>
+                            <div class="name green">environmental</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit.</div>
+                            <a class="watch-video" href="">watch video
+                                <span class="sprites-play-icon sprites"></span>
+                            </a>
+                        </div>
+                        <div class="item ">
+                            <div class="image auto-height"><img src="img/tech-business.png" alt="" /></div>
+                            <div class="name purple">tech/business</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit.</div>
+                            <a class="watch-video" href="">watch video
+                                <span class="sprites-play-icon sprites"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab content category-->
+                <div role="tabpanel" class="tab-pane" id="what">
+                    <div class="tab-pane-content container">
+                        <div class="item ">
+                            <div class="number">01</div>
+                            <div class="image"><img src="img/nescafe-card.png" alt="" /></div>
+                            <div class="title">Lorem ipsum dolor sit amet, consectet adipiscing elit</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">02</div>
+                            <div class="image"><img src="img/nescafe-card1.png" alt="" /></div>
+                            <div class="title">Lorem ipsum dolor sit amet, consectet adipiscing elit</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">03</div>
+                            <div class="image"> <img src="img/headstart.png" alt="" /></div>
+                            <div class="title">Lorem ipsum dolor sit amet, consectet adipiscing elit</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">04</div>
+                            <div class="image"><img src="img/cup.png" alt="" /></div>
+                            <div class="title">Lorem ipsum dolor sit amet, consectet adipiscing elit</div>
+                        </div>
+                        <div class="item">
+                            <div class="number">05</div>
+                            <div class="image"><img src="img/badget.png" alt="" /></div>
+                            <div class="title">Lorem ipsum dolor sit amet, consectet adipiscing elit</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab content what-->
+                <div role="tabpanel" class="tab-pane" id="key-date">
+                    <div class="tab-pane-content container">
+                        <div class="progress">
+                            <span class="start-pointer">You’re here</span>
+                            <div class=""></div>
+                        </div>
+                        <div class="info">
+                            <div class="info-item">
+                                <div class="date"><span>4</span>APRIL</div>
+                                <div class="entrie-status">Entries Open</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="date"><span>5</span>May</div>
+                                <div class="entrie-status"> Entries Close</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="date"><span>17</span>May</div>
+                                <div class="entrie-status">Semi Finals</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="date"><span>6</span>June</div>
+                                <div class="entrie-status">Finals</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tab content key-date-->
+            </div>
+        </section>
+        <!-- END - tab-panel =================================================================================== -->
+        <section class="let-us-know entry-section" id="entry-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <h1>Enter <br/>
+your idea</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis, nisl quis semper blandit, lacus arcu iaculis urna, vel interdum nunc enim vel enim. Vivamus gravida placerat mollis. Ut convallis libero est.</p>
+                        <p>Already Submitted? Log in <a href="#">here.</a></p>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <form action="" method="">
+                            <div class="form-group text-area">
+                                <textarea class="form-control" placeholder="Our #nescafeidea is..."></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-default button-submit">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - let-us-know =================================================================================== -->
+        <section class="search-section" id="entry-section" role="tablist" aria-multiselectable="true">
+            <div class="search-bar">
+                <div class="search-bar-inner">
+                    <form action="" method="">
+                        <div class="clearfix">
+                            <div class="col-md-6 col-xs-12 left">
+                                <label>Check out
+                                    <br/> the ideas</label>
+                                <input type="text" class="input-search form-control" placeholder="Search Projects" />
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="right-action clearfix" id="accordion">
+                                    <a class="filter-button" role="button" data-toggle="collapse" data-parent="#entry-section" href="#all-category" aria-expanded="false" aria-controls="all-category">
+                                        <span>Show All <br/>Categories <span class="sprites sprites-arrow-down"></span> </span>
+                                    </a>
+                                    <a class="filter-button oneline" role="button" data-toggle="collapse" data-parent="#entry-section" href="#most-popular" aria-expanded="false" aria-controls="most-popular">
+                                        <span> Most popular <span class="sprites sprites-arrow-down"></span></span>
+                                    </a>
+                                    <button type="submit" class="search-button">search <span class="circle-icon"><span class="sprites-arrow-down sprites"></span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end search-bar-->
+            <div class="search-filter">
+                <div id="all-category" class="panel-collapse collapse ">
+                    <ul>
+                        <li><a href=""><span class="icon-lap purple"></span> Tech / Business</a></li>
+                        <li><a href=""><span class="icon-leaft green"></span> Environment</a></li>
+                        <li class="active"><a href=""><span class="icon-cause  orange"></span> Social cause</a></li>
+                        <li><a href=""><span class="icon-xo yellow"></span>Bucket List</a></li>
+                        <li><a href=""><span class="icon-bush  blue"></span>Arts / Culture</a></li>
+                    </ul>
+                </div>
+                <div id="most-popular" class="panel-collapse collapse">
+                    <ul>
+                        <li><a href=""> Most popular</a></li>
+                        <li><a href=""> Most Recent</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end search-filter-->
+            <div class="search-result">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-yellow"><span class="icon-xo yellow"></span></div><img src="img/images/nescafe-headstart-homepage_03.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-blue"><span class="icon-bush blue"></span></div><img src="img/images/nescafe-headstart-homepage_05.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-green"><span class="icon-leaft green"></span></div><img src="img/images/nescafe-headstart-homepage_07.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-yellow"><span class="icon-xo yellow"></span></div><img src="img/images/nescafe-headstart-homepage_09.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-orange"><span class="icon-cause orange"></span></div><img src="img/images/nescafe-headstart-homepage_03.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-blue"><span class="icon-bush blue"></span></div><img src="img/images/nescafe-headstart-homepage_05.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-green"><span class="icon-leaft green"></span></div><img src="img/images/nescafe-headstart-homepage_07.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="category-icon bg-purple"><span class="icon-lap purple"></span></div><img src="img/images/nescafe-headstart-homepage_09.jpg" alt="" /></div>
+                                <div class="description">Idea title goes here and it’s very very very extremely looong. So long.</div>
+                                <div class="bottom-bar clearfix">
+                                    <a class="pull-right share" href="">share</a>
+                                    <a class="pull-left like" href="">123 <span class="icon-heart-shapes"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more center">
+                        <a class="btn btn-default" href="">Load more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- search-result-->
+        </section>
+        <!-- END - widget-bottom =================================================================================== -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11 col-xs-12">
+                        <div class="copy-right pull-left">©2016 NESTLÉ</div>
+                        <ul class="footer-menu-primary pull-left">
+                            <li>
+                                <a href="http://www.nestle.com.au/info/termsandconditions">Terms and conditions</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nestle.com.au/info/privacypolicy">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="http://www.nestle.com.au/info/full-privacy-policy">cookies</a>
+                            </li>
+                            <li>
+                                <a href="https://www.nestle.com.au/info ">contact</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-menu-social pull-right">
+                            <li>
+                                <a href="https://www.facebook.com/NESCAFEDolceGustoANZ/" class=""><span class="icon-Facebook-circle-icon"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/nescafeanz/" class=""><span class="icon-Instagram-circle-icon"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/NESCAFEANZ" class=""><span class="icon-YouTube-circle-icon"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END - footer =================================================================================== -->
+    </div>
+    <!-- END - wrapper =================================================================================== -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tabcollapse.js"></script>
+    <script type="text/javascript" src="js/fancyBox/jquery.fancybox.pack.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.2.8/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

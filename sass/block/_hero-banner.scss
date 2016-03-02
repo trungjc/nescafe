@@ -1,0 +1,39 @@
+.container-video {
+    @include opacity(0.53);
+    height: 780px;
+}
+
+.container-caption {
+    position: absolute;
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    z-index: 2;
+    p {
+        margin: 0 auto;
+        max-width: 430px;
+    }
+    h2,
+    .em {
+        font-size: 20px;
+    }
+    h2 {
+    	text-transform: uppercase;
+    	margin: 20px 0 5px;
+    }
+    .play-button {
+        margin: 45px 0 0 0;
+        display: inline-block;
+        span {
+            display: block;
+            margin-top: 15px;
+        }
+        &:hover {
+            @include opacity(0.9);
+            span {
+            	color: white;
+            }
+        }
+    }
+}

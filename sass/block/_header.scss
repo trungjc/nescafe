@@ -1,0 +1,42 @@
+.logo {
+    margin: 10px 30px 0 0;
+}
+
+// search box
+.search-box {
+    position: relative;
+    @include tablet {
+        margin: 22px 0 0 26px;
+    }
+    .search-field {
+        background: transparent;
+        border: none;
+        @include box-shadow(none);
+        width: 0;
+
+        //padding-left: 30px;
+    }
+    .search-icon {
+        //background: none;
+        // border: none;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        //position: absolute;
+        //left: 0;
+        //top: 0;
+        .glyphicon {
+            font-size: 20px;
+            color: #b3b3b3;
+        }
+    }
+}
+
+.search-form {
+    &.active {
+        .search-field {
+            width: auto; @include animation(0.1s linear 0s normal none 0.3  all)
+        }
+    }
+}

@@ -1,0 +1,170 @@
+$font-glyphicons: "Glyphicons Halflings";
+html,
+body {
+    height: 100%;
+    &.no-scroll-y {
+        overflow-y: hidden !important;
+    }
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-default-bold;
+    line-height: 120%;text-transform: uppercase;
+}
+
+h1 {
+    font-size: 70px; 
+        line-height: 100%;
+    margin: 0 0 10px;
+}
+
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+a,
+:hover,
+:focus {
+    outline: none !important;
+}
+
+.transition-effect,
+%transition-effect {
+    @include transition(all .15s ease-in-out);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+.container {
+    @media (min-width: 1600px) {
+        width: 1440px;
+    }
+}
+
+.em {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.name {
+    @extend h3;
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: #fff;
+}
+
+.btn {
+    &.btn-default {
+        @include border-radius(0);
+        border-width: 3px;
+        font-size: 16px;
+        font-family: $font-default-bold;
+        text-transform: uppercase;
+        padding: 20px 50px;
+    }
+    &:hover {
+        @include opacity(0.9)
+    }
+}
+
+.blue {
+    color: #3f82a4
+}
+
+.yellow {
+    color: #db9f1d
+}
+
+.orange {
+    color: #d5572b
+}
+
+.green {
+    color: #5ea82c
+}
+
+.purple {
+    color: #993d80
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.bg-blue {
+    background-color: #3f82a4;
+
+}
+
+.bg-yellow {
+    background-color: #db9f1d;
+
+}
+
+.bg-orange {
+    background-color: #d5572b;
+
+}
+
+.bg-green {
+    background-color: #5ea82c;
+
+}
+
+.bg-purple {
+    background-color: #993d80;
+
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+.text-right {
+    text-align: right;
+}
