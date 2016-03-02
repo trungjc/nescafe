@@ -189,13 +189,16 @@ $spacing: 20px);
         }
         .item {
             position: relative;
-            @include tablet {
-                float: left;
-                width: 20%;
-                padding: 0 40px;
-            }
+            float: left;
+            padding: 0 40px;
             display: block;
             text-align: center;
+            @include mobile {
+                width: 50%;
+            }
+            @include tablet {
+                width: 20%;
+            }
             .number {
                 position: absolute;
                 @include tablet {
@@ -226,7 +229,8 @@ $spacing: 20px);
         white-space: nowrap;
         @include mobile {
             font-size: 12px;
-            left: 0;  top: -40px;
+            left: 0;
+            top: -40px;
             margin-left: -30px;
         }
     }
@@ -302,8 +306,16 @@ $spacing: 20px);
 .entry-section {
     padding: 90px 0;
     background: $navbar-inverse-link-hover-bg;
+    .text-right {
+        @include mobile {
+            text-align: center;
+        }
+    }
     .button-submit {
         margin-top: 30px;
+        @include mobile {
+            width: 80%;
+        }
     }
     a {
         color: #000;
@@ -471,19 +483,33 @@ $spacing: 20px);
 
 //search-bar===================
 .search-bar {
-    background: #ba2018;
+    @include tablet {
+        background: #ba2018;
+    }
     .col-md-6 {
-        font-size: 0;
+        @include mobile {
+            padding: 0;
+        }
+        @include tablet {
+            font-size: 0;
+        }
     }
     label {
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+        @include tablet {
+            width: 50%;
+            display: inline-block;
+            text-align: right;
+            padding: 0px 70px 0 0;
+        }
         vertical-align: middle;
-        width: 50%;
-        padding-right: 78px;
-        text-align: right;
         font-size: $font-size-base + 5;
         font-family: $font-default-bold;
         text-transform: uppercase;
         position: relative;
+        @include mobile {}
         &:after {
             @include triangle(right,
             30px,
@@ -496,16 +522,25 @@ $spacing: 20px);
             top: 50%;
             width: 0;
             @include transform(translateY(-50%));
+            @include mobile {
+                width: 0;
+                bottom: -35px;
+                right: 50%;
+                top: auto;
+                @include transform(rotate(-270deg));
+            }
         }
     }
     input[type="text"] {
+        @include tablet {
+            width: 50%;
+            padding-left: 50px;
+        }
         height: 130px;
         vertical-align: middle;
-        width: 50%;
         font-size: $font-size-base;
         font-style: italic;
         display: inline-block;
-        padding-left: 50px;
         color: #000;
         &:focus,
         &:active {
@@ -517,13 +552,18 @@ $spacing: 20px);
     }
     .bootstrap-select > .btn {}
     .right-action {
-        margin-left: -20px;
-        font-size: 0;
+        @include tablet {
+            font-size: 0;
+            margin-left: -20px;
+        }
         * {
             font-size: $font-size-base;
         }
     }
     .search-button {
+        @include mobile {
+            display: none;
+        }
         border: none;
         font-size: $font-size-base + 5;
         color: white;
@@ -547,6 +587,9 @@ $spacing: 20px);
         float: left;
         height: 130px;
         padding: 39px 6px;
+        @include mobile {
+            width: 50%;
+        }
         @media (min-width: 1025px) {
             padding: 39px 30px;
         }
@@ -586,16 +629,24 @@ $spacing: 20px);
 }
 
 .search-filter {
-    text-align: center;
+    @include tablet {
+        text-align: center;
+    }
     .panel-collapse {
         width: 100%;
-        text-align: center;
-        //position: absolute;
+        @include tablet {
+            text-align: center;
+        }
     }
     li {
-        display: inline-block;
-        a {
+        @include tablet {
             display: inline-block;
+        }
+        a {
+            display: block;
+            @include tablet {
+                display: inline-block;
+            }
             padding: 40px 30px;
             font-size: $font-size-base + 1;
             text-transform: uppercase;

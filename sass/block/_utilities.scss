@@ -21,8 +21,11 @@ h3 {
 }
 
 h1 {
-    font-size: 70px; 
-        line-height: 100%;
+    font-size: 40px; 
+    @include tablet {
+       font-size: 70px;  
+    }
+    line-height: 100%;
     margin: 0 0 10px;
 }
 
