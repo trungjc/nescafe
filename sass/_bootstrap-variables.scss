@@ -652,14 +652,14 @@ $navbar-inverse-link-active-bg:             $navbar-inverse-link-hover-bg !defau
 ////##
 //
 ////** Background color of the whole progress component
-//$progress-bg:                 #f5f5f5 !default;
+$progress-bg:                 #202020 !default;
 ////** Progress bar text color
-//$progress-bar-color:          #fff !default;
+$progress-bar-color:          #fff !default;
 ////** Variable for setting rounded corners on progress bar.
-//$progress-border-radius:      $border-radius-base !default;
+$progress-border-radius:      0 !default;
 //
 ////** Default progress bar color
-//$progress-bar-bg:             $brand-primary !default;
+$progress-bar-bg:             $navbar-inverse-link-hover-bg !default;
 ////** Success progress bar color
 //$progress-bar-success-bg:     $brand-success !default;
 ////** Warning progress bar color
@@ -707,20 +707,19 @@ $navbar-inverse-link-active-bg:             $navbar-inverse-link-hover-bg !defau
 ////== Panels
 ////
 ////##
-//
-//$panel-bg:                    #fff !default;
+$panel-bg:                    #000 !default;
 //$panel-body-padding:          15px !default;
-//$panel-heading-padding:       10px 15px !default;
+$panel-heading-padding:       50px 15px !default;
 //$panel-footer-padding:        $panel-heading-padding !default;
-//$panel-border-radius:         $border-radius-base !default;
+$panel-border-radius:         0 !default;
 //
 ////** Border color for elements within panels
-//$panel-inner-border:          #ddd !default;
+$panel-inner-border:          transparent !default;
 //$panel-footer-bg:             #f5f5f5 !default;
 //
 //$panel-default-text:          $gray-dark !default;
-//$panel-default-border:        #ddd !default;
-//$panel-default-heading-bg:    #f5f5f5 !default;
+$panel-default-border:        transparent !default;
+$panel-default-heading-bg:    #141414 !default;
 //
 //$panel-primary-text:          #fff !default;
 //$panel-primary-border:        $brand-primary !default;
@@ -748,7 +747,7 @@ $navbar-inverse-link-active-bg:             $navbar-inverse-link-hover-bg !defau
 ////##
 //
 //** Padding around the thumbnail image
-$thumbnail-padding:           0 !default;
+/* $thumbnail-padding:           0 !default;
 //** Thumbnail background color
 $thumbnail-bg:                $body-bg !default;
 //** Thumbnail border color
@@ -759,7 +758,7 @@ $thumbnail-border-radius:     0 !default;
 //** Custom text color for thumbnail captions
 $thumbnail-caption-color:     #464646 !default;
 //** Padding around the thumbnail caption
-$thumbnail-caption-padding:   $grid-gutter-width !default;
+$thumbnail-caption-padding:   $grid-gutter-width !default; */
 //
 //
 ////== Wells

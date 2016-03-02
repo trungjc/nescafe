@@ -89,13 +89,13 @@ $spacing: 20px);
             color: #595959;
             border: none;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: $font-size-base + 5;
             font-family: $font-default-bold;
             padding: 60px 30px;
             text-align: center;
             @include tablet-only {
                 padding: 30px 20px;
-                font-size: 16px;
+                font-size: $font-size-base + 1;
             }
             @media (min-width: 1390px) {
                 min-width: 340px;
@@ -166,7 +166,7 @@ $spacing: 20px);
     }
     .tab-pane-content {
         .name {
-            font-size: 20px;
+            font-size: $font-size-base + 5;
             margin: 35px 0 20px;
             &.blue {
                 color: #3f82a4
@@ -198,7 +198,9 @@ $spacing: 20px);
             text-align: center;
             .number {
                 position: absolute;
-                font-size: 156px;
+                @include tablet {
+                    font-size: 156px;
+                }
                 color: #8b8b8b;
                 @include opacity(0.10);
                 font-family: $font-default-bold;
@@ -208,6 +210,92 @@ $spacing: 20px);
             }
         }
     }
+}
+
+.progress {
+    overflow: visible;
+    position: relative;
+    .progress-bar {
+        max-width: 100%;
+    }
+    .start-pointer {
+        left: 100%;
+        margin-left: -46px;
+        position: absolute;
+        top: -80px;
+        white-space: nowrap;
+        @include mobile {
+            font-size: 12px;
+            left: 0;  top: -40px;
+            margin-left: -30px;
+        }
+    }
+    @include tablet {
+        margin-bottom: 100px;
+    }
+}
+
+.info-item {
+    float: left;
+    position: relative;
+    &:after {
+        width: 20px;
+        height: 25px;
+        left: -20px;
+        @include mobile {
+            width: 5px;
+            left: -5px;
+        }
+        position: absolute;
+        content: "";
+        display: block;
+        top: -125px;
+        @include mobile {
+            top: -50px;
+        }
+        background: black;
+    }
+    &.item1 {
+        width: 35%;
+        &:after {
+            display: none;
+        }
+    }
+    &.item2 {
+        width: 30%
+    }
+    &.item3 {
+        width: 20%
+    }
+    &.item4 {
+        width: 15%
+    }
+    .date {
+        @include desktop {
+            font-size: 42px;
+        }
+        line-height: 28px;
+        text-transfor: uppercase;
+        font-family: $font-default-bold;
+        span {
+            @include desktop {
+                font-size: 70px;
+            }
+            line-height: 28px;
+        }
+    }
+}
+
+#key-date-collapse {
+    @include mobile {
+        .tab-pane-content {
+            padding-top: 50px;
+        }
+    }
+}
+
+.progress-bar {
+    position: relative;
 }
 
 //entry-section============================
@@ -274,7 +362,7 @@ $spacing: 20px);
         position: relative;
         margin: 10px 0;
         &:hover {
-            &:after {
+            .link {
                 display: block;
             }
             .category-icon {
@@ -314,15 +402,17 @@ $spacing: 20px);
                 color: white;
             }
         }
-        &:after {
+        .link {
             @include element-visible();
             display: none;
             @include transition(all 0.5s ease-in-out 0.5s);
             background: rgba(219, 159, 29, 0.7);
-            @include pointer-events;
+            //@include pointer-events; 
+            z-index: 1;
+            cursor: pointer;
         }
         .icon-heart-shapes {
-            font-size: 20px;
+            font-size: $font-size-base + 5;
             margin-left: 5px;
             ;
             color: #e0251c;
@@ -338,7 +428,7 @@ $spacing: 20px);
         }
         .description {
             min-height: 114px;
-            font-size: 20px;
+            font-size: $font-size-base + 5;
             line-height: 120%;
         }
         .bottom-bar,
@@ -375,6 +465,10 @@ $spacing: 20px);
     }
 }
 
+.search-filter.active + .search-result {
+    padding-top: 0;
+}
+
 //search-bar===================
 .search-bar {
     background: #ba2018;
@@ -386,7 +480,7 @@ $spacing: 20px);
         width: 50%;
         padding-right: 78px;
         text-align: right;
-        font-size: 20px;
+        font-size: $font-size-base + 5;
         font-family: $font-default-bold;
         text-transform: uppercase;
         position: relative;
@@ -408,7 +502,7 @@ $spacing: 20px);
         height: 130px;
         vertical-align: middle;
         width: 50%;
-        font-size: 15px;
+        font-size: $font-size-base;
         font-style: italic;
         display: inline-block;
         padding-left: 50px;
@@ -426,16 +520,19 @@ $spacing: 20px);
         margin-left: -20px;
         font-size: 0;
         * {
-            font-size: 15px;
+            font-size: $font-size-base;
         }
     }
     .search-button {
         border: none;
-        font-size: 20px;
+        font-size: $font-size-base + 5;
         color: white;
         background: none;
         outline: none;
-        padding: 45px 42px;
+        padding: 45px 10px;
+        @media (min-width: 1025px) {
+            padding: 45px 42px;
+        }
         vertical-align: middle;
         font-family: $font-default-bold;
         text-transform: uppercase;
@@ -449,7 +546,10 @@ $spacing: 20px);
         vertical-align: middle;
         float: left;
         height: 130px;
-        padding: 39px 30px;
+        padding: 39px 6px;
+        @media (min-width: 1025px) {
+            padding: 39px 30px;
+        }
         &.oneline {
             span {
                 margin-top: 20px;
@@ -497,7 +597,7 @@ $spacing: 20px);
         a {
             display: inline-block;
             padding: 40px 30px;
-            font-size: 16px;
+            font-size: $font-size-base + 1;
             text-transform: uppercase;
             &:hover {
                 background: #e42926;
